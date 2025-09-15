@@ -1,5 +1,8 @@
 #!/bin/bash
 # Script to tune network stack and NIC settings based on installed memory
+# This script optimizes for high latency, high bandwidth content delivery. 
+# Don't use for latency-sensitive applications.
+#
 # Usage: iface-tuning.sh [interface]
 # If no interface is specified, the script uses the default gateway interface.
 
