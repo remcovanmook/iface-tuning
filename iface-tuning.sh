@@ -104,6 +104,7 @@ apply_ethtool() {
 }
 
 # --- Apply NIC settings ---
+apply_ethtool -A rx off tx off
 apply_ethtool -G rx "$RX" tx "$TX"
 apply_ethtool -K gro on gso on tso on lro on
 apply_ethtool -C rx-usecs 50 tx-usecs 50 rx-frames 0 tx-frames 0 \
